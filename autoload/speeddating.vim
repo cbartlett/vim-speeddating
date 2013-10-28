@@ -539,7 +539,6 @@ let s:strftime_items = {
       \ "o": ['d','d','[ 0-3]\=\d\%(st\|nd\|rd\|th\)','day  (1st-31st)',s:function("s:ordinalize")],
       \ "P": ['h','p','[ap]m', 'am/pm',repeat(['am'],12) + repeat(['pm'],12)],
       \ "S": ['s','s','[ 0-5]\=\d', 'seconds',2],
-      \ "v": ['y','y','[ivxlcdmn]\+','year (roman numerals)',s:function("s:arabic2roman")],
       \ "y": ['y','y','\d\d','year  (00-99)',s:function("s:modyear")],
       \ "Y": ['y','y','-\=\d\d\d\=\d\=','year',4],
       \ "k": ['k','k','\d\d\d','milliseconds',3],
